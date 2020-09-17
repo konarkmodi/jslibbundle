@@ -7,6 +7,12 @@ module.exports = {
         library: 'webpackNumbers',
         libraryTarget: 'umd',
     },
+
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    }
     // externals: {
     //     lodash: {
     //         commonjs: 'lodash',
