@@ -2,7 +2,7 @@
 d = genskill.init();
 
 window.onload = function() {
-    console.log("Here !", d.Vue);
+    console.log("Here !", d.gs_calendar);
 
     var component_a = {
         data: function () {
@@ -15,12 +15,13 @@ window.onload = function() {
  
 
     var app = new d.Vue({
-        el: '#app',
         components: {
-            'compa': component_a
+            'compa': component_a,
+            'calendar': d.gs_calendar
         },
         data: {
-            message: 'Hello Vue!'
+            message: 'Hello Vue!',
+            date1: null
         }
     });
 };
