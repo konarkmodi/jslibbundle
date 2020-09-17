@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "lodash": "^4.17.20",
+    "primevue": "^2.0.9",
+    "vue": "^2.6.12",
     "webpack": "^4.44.1"
   }
 }
