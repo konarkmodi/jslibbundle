@@ -10,12 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^4.3.0",
     "lodash": "^4.17.20",
     "primevue": "^2.0.9",
     "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1"
   },
   "dependencies": {
-    "primeicons": "^4.0.0"
+    "primeicons": "^4.0.0",
+    "style-loader": "^1.2.1"
   }
 }
