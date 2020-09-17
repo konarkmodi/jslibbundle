@@ -1,5 +1,5 @@
 // Getting Vue
-d = webpackNumbers.init();
+d = genskill.init();
 
 window.onload = function() {
     console.log("Here !", d.Vue);

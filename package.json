@@ -1,8 +1,8 @@
 {
-  "name": "packer-lib",
+  "name": "genskill",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/webpack-numbers.js",
+  "main": "dist/genskill.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
