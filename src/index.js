@@ -1,19 +1,8 @@
-import _ from 'lodash';
-import numRef from './ref.json';
 import Vue  from 'vue';
+import Dialog from 'primevue/dialog';
 
-export function numToWord(num) {
-  return _.reduce(numRef, (accum, ref) => {
-    return ref.num === num ? ref.word : accum;
-  }, '');
-}
-
-export function wordToNum(word) {
-  return _.reduce(numRef, (accum, ref) => {
-    return ref.word === word && word.toLowerCase() ? ref.num : accum;
-  }, -1);
-}
 
 export function init() {
+    Vue.component('Dialog', Dialog);
     return {"Vue" : Vue}
 }

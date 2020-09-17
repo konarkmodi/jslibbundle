@@ -14,5 +14,8 @@
     "primevue": "^2.0.9",
     "vue": "^2.6.12",
     "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "primeicons": "^4.0.0"
   }
 }
