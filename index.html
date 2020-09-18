@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title> Testing </title>
+<link href="https://unpkg.com/primevue/resources/themes/saga-blue/theme.css " rel="stylesheet">
+<link href="https://unpkg.com/primeicons/primeicons.css " rel="stylesheet">
+<link href="https://unpkg.com/primevue/resources/themes/saga-blue/theme.css " rel="stylesheet">
+<link href="https://unpkg.com/primeicons/primeicons.css " rel="stylesheet">
+<script src="https://unpkg.com/vue"></script>
+<script src="./my-custom-element.umd.js"></script>
+
+</head>
+<body>
+    Testing
+    <div id="app">
+    	<Calendar />
+    </div>
+    <div id="counter">
+    {{ message }}
+    <compa></compa>
+
+    </div>
+<script>
+
+
+window.onload = function() {
+    var component_a = {
+        data: function () {
+            return {
+                count: 0
+            }
+        },
+        template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+    };
+
+	new Vue({
+        el: '#app',
+        components: {
+           ...window['my-custom-element'].default
+        },
+      });
+
+   	new Vue({
+        el: '#counter',
+        components: {
+            'compa': component_a
+        },
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+}
+</script>
+</script>
+</body>
+</html>
